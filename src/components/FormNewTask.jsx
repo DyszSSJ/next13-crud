@@ -6,6 +6,7 @@ const FormNewTask = ({
   setDescription,
   title,
   description,
+  params,
 }) => {
   return (
     <form onSubmit={onSubmit} className="modal">
@@ -41,7 +42,9 @@ const FormNewTask = ({
         </div>
       </div>
       <div className="modal__footer">
-        <button className="button button--primary">Create project</button>
+        <button className="button button--primary">
+          {params.id ? "Save changes" : "Create project"}
+        </button>
       </div>
     </form>
   );

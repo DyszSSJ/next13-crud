@@ -53,6 +53,7 @@ const NewPage = ({ params }) => {
         setTitle={setTitle}
         description={description}
         setDescription={setDescription}
+        params={params}
       />
     </div>
   );
